@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+header {
+    background: #172554;
+    padding: 15px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+button, .btn {
+    background: #0ea5e9;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.profile {
+    text-align: center;
+    padding: 50px 20px;
+    background: #dbeafe;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #172554;
+    margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 32px;
+    color: #172554;
+}
+
+.profile .btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+section {
+    padding: 35px 10%;
+}
+
+section h2 {
+    color: #172554;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0ea5e9;
+    padding-bottom: 8px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: #172554;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #172554;
+    color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #111827;
+    color: #f9fafb;
+}
+
+.dark-mode .profile {
+    background: #1e293b;
+}
+
+.dark-mode .profile h1,
+.dark-mode section h2 {
+    color: #38bdf8;
+}
+
+.dark-mode .card {
+    background: #1f2937;
+    color: white;
+}
+
+.dark-mode .skills span {
+    background: #0284c7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    section {
+        padding: 25px 5%;
+    }
+
+    .profile h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+}
